@@ -1,0 +1,115 @@
+public class TreeStars {
+    public static void main(String args[]) {
+        _createTriangle();
+        _createBox();
+        _createChristmasTree(); 
+        _createBoat();
+    }
+
+    private static void _whiteSpaces (){
+        for(int a = 1; a <= 4; a++){
+            System.out.println();
+        }
+    }
+
+    private static void _createTriangle() {
+        int _countStars = 1, _whiteSpaces = 7;
+
+        for (int _standStars = 1; _standStars <= 7; _standStars++) {
+            for (int _leftSpaces = 1; _leftSpaces <= _whiteSpaces; _leftSpaces++) {
+                System.out.print(" ");
+            }
+            for (int _printStars = 1; _printStars <= _countStars; _printStars++){
+                System.out.print("*");
+            }
+            
+            _countStars = _countStars + 2;
+            _whiteSpaces--;
+            System.out.println();
+        }
+        
+        _whiteSpaces();
+    }
+
+    private static void _createBox(){
+
+        for (int _standStars = 1; _standStars <= 7; _standStars++){
+            if (_standStars == 1 || _standStars == 7){
+                for (int _printStars = 1; _printStars <= 7; _printStars++){
+                    System.out.print("*");
+                }
+            }else {
+                    for (int _printStars = 1 ; _printStars <= 7; _printStars++){
+                        if (_printStars == 1 ||  _printStars == 7){
+                            System.out.print("*");
+                        }else{
+                            System.out.print(" ");
+                        }
+                    }
+                }
+            System.out.println();
+            }
+
+        _whiteSpaces();
+        }
+
+        private static void _createChristmasTree(){
+            int _countStars = 1, _whiteSpaces = 7;
+
+            for (int _standStars = 1; _standStars <= 7; _standStars++) {
+                for (int _leftSpaces = 1; _leftSpaces <= _whiteSpaces; _leftSpaces++) {
+                    System.out.print(" ");
+                }
+                for (int _printStars = 1; _printStars <= _countStars; _printStars++){
+                    System.out.print("*");
+                }
+                
+                System.out.println();
+                _countStars = _countStars + 2;
+                _whiteSpaces--;
+            }
+
+            for (int _standTree = 1; _standTree <= 7; _standTree++){
+                for(int _leftSpaces = 1; _leftSpaces <= 7; _leftSpaces++){
+                    System.out.print(" ");
+                }
+                System.out.print("*");
+                System.out.println();
+            }
+
+            _whiteSpaces();
+        }
+
+        private static void _createBoat(){
+            int _countStars = 1, _whiteSpaces = 7, _boatLength = 30;
+
+            for (int _standStars = 1; _standStars <= 7; _standStars++) {
+                for (int _leftSpaces = 1; _leftSpaces <= _whiteSpaces; _leftSpaces++) {
+                    System.out.print(" ");
+                }
+                for (int _printStars = 1; _printStars <= _countStars; _printStars++){
+                    System.out.print("*");
+                }
+                
+                System.out.println();
+                _countStars = _countStars + 2;
+                _whiteSpaces--;
+            }
+
+            for(int _flagStand = 1; _flagStand <= 4; _flagStand++){
+                for (int _leftSpaces = 1; _leftSpaces <= _countStars - 2; _leftSpaces++){
+                    System.out.print(" ");
+                }
+                System.out.print("*");
+                System.out.println();
+            }
+            
+            for(int _boatStand = 1; _boatStand <= 8; _boatStand++){
+                for(int _initCount = 1; _initCount <= _boatLength; _initCount++){
+                    if (_initCount == 1 ){
+                        
+                    }
+                }
+            }
+        }
+    }
